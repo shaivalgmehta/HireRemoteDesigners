@@ -83,9 +83,9 @@ document.getElementById('lightbox-close').addEventListener('click', () => lightb
 document.getElementById('lightbox-prev').addEventListener('click', () => navigate(-1));
 document.getElementById('lightbox-next').addEventListener('click', () => navigate(1));
 
-// Close on backdrop click
+// Close on backdrop click (clicking outside the image)
 lightbox.addEventListener('click', (e) => {
-  if (e.target === lightbox) lightbox.close();
+  if (e.target === lightbox || e.target.closest('.flex') === e.target) lightbox.close();
 });
 
 // Keyboard navigation

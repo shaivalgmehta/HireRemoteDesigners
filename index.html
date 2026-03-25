@@ -831,12 +831,12 @@
 
 
   <!-- Lightbox -->
-  <dialog id="lightbox" class="bg-transparent p-0 m-auto max-w-[90vw] max-h-[90vh] backdrop:bg-black/80 backdrop:backdrop-blur-sm">
-    <div class="relative">
-      <button id="lightbox-close" class="absolute -top-10 right-0 text-white hover:text-pop text-3xl font-bold cursor-pointer bg-transparent border-none" aria-label="Close">&times;</button>
-      <button id="lightbox-prev" class="absolute top-1/2 -left-12 -translate-y-1/2 text-white hover:text-pop text-4xl font-bold cursor-pointer bg-transparent border-none" aria-label="Previous">&lsaquo;</button>
-      <button id="lightbox-next" class="absolute top-1/2 -right-12 -translate-y-1/2 text-white hover:text-pop text-4xl font-bold cursor-pointer bg-transparent border-none" aria-label="Next">&rsaquo;</button>
-      <img id="lightbox-img" src="" alt="" class="max-w-[85vw] max-h-[85vh] object-contain rounded-lg">
+  <dialog id="lightbox" class="fixed inset-0 w-screen h-screen bg-black/90 p-0 m-0 max-w-none max-h-none border-none z-[100] backdrop:bg-transparent">
+    <div class="flex items-center justify-center w-full h-full relative">
+      <button id="lightbox-close" class="absolute top-4 right-4 text-white hover:text-pop text-4xl font-bold cursor-pointer bg-transparent border-none z-10" aria-label="Close">&times;</button>
+      <button id="lightbox-prev" class="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-pop text-4xl font-bold cursor-pointer bg-transparent border-none z-10" aria-label="Previous">&lsaquo;</button>
+      <button id="lightbox-next" class="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-pop text-4xl font-bold cursor-pointer bg-transparent border-none z-10" aria-label="Next">&rsaquo;</button>
+      <img id="lightbox-img" src="" alt="" class="max-w-[90vw] max-h-[90vh] object-contain rounded-lg">
     </div>
   </dialog>
 
